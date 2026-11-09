@@ -1,0 +1,22 @@
+[project]
+name = "leetdash"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Phuc Nguyen", email = "huuphuc.n12@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "databricks-sql-connector>=4.9.0",
+    "dotenv>=0.9.9",
+    "plotly>=7.1.0",
+    "streamlit>=1.67.0",
+]
+
+[project.scripts]
+leetdash = "leetdash:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
